@@ -20,8 +20,8 @@ int main(void) {
 
     printf("Sum:%d\n", sum);
     printf("Difference:%d\n", subtraction);
-    printf("Multiplication:%.2f\n", product);
-    printf("Division:%.2f\n", quotient);
-    printf("Remainder:%.2f\n", remainder);
+    printf("Multiplication:%d\n", product);
+    printf("Division:%d\n", quotient);
+    printf("Remainder:%d\n", remainder);
     return 0;
 }
