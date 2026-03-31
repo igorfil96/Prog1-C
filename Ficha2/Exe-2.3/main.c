@@ -1,29 +1,23 @@
-#include <math.h>
 #include <stdio.h>
 
 int main(void) {
-    int side1, side2, side3;
+    int number1, number2, number3;
 
-    printf("Enter the length of the first side:\n");
-    scanf("%d", &side1);
-    printf("Enter the length of the second side:\n");
-    scanf("%d", &side2);
-    printf("Enter the length of the third side:\n");
-    scanf("%d", &side3);
+    // Requesting input from the user
+    printf("Enter three integers separated by spaces: ");
 
-    // 1. Triangle Existence Check:
-    if (abs(side1 - side2) < side3 && side3 <(side1 + side2)) {}
-
-    // 2. Classification Logic
-    if (side1 == side2 && side2 == side3) {
-        printf("The sides form an Equilateral triangle.\n");
-    }else if (side1 != side2 && side2 != side3 && side1 != side3) {
-        printf("The sides form an Isosceles triangle.\n");
-    }
-    else  {
-        // If the existence rule is not met
-        printf("Error: These lengths cannot form a triangle.\n");
+    // Reading all three values in a single line (common for this type of exercise)
+    if (scanf("%d %d %d", &number1, &number2, &number3) != 3) {
+        printf("Error: Please enter valid numeric values.\n");
+        return 1;
     }
 
-        return 0;
+    //* * Logical Check:
+    if (number1 == number2 || number2 == number3 || number1 == number3) {
+        printf("Equal values were entered.\n");
+    } else {
+        printf("No equal values were entered (all are unique).\n");
+    }
+
+    return 0;
 }
