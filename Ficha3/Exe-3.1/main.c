@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main(void) {
-    int target, sum, i;
+    int target, sum, i;Introduza um numero positivo
 
     //Validation
     do {
